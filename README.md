@@ -1,4 +1,4 @@
 paracelsus
 ==========
 
-A Clojure to BrighScript transpiler
+A Clojure to BrightScript transpiler
