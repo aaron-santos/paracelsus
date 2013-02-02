@@ -1,7 +1,7 @@
 (defn set-theme []
-  (let [app    (create-object "roAppManager")
-        theme  (create-object "roAssociativeArray")]
-      (.SetTheme app theme)))
+  (when-let [app    (create-object "roAppManager")]
+    (when-let [theme  (create-object "roAssociativeArray")]
+      (.SetTheme app theme))))
 
 (defn -main []
-  (setTheme))
+  (set-theme))
